@@ -1,120 +1,139 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/style.css">
-
+        <title>Product landing page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+         <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <header id="header">
-            <div class="logo">
-                <img id="img-logo" src="img/logo3.png" alt="corp logo" />
-            </div>
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#">Click1</a></li>
-                    <li><a class="nav-link" href="#">Click2</a></li>
-                    <li><a class="nav-link" href="#">Click3</a></li>
-                </ul>
-            </nav>
+        <header> 
+                <div id="logo-container">
+                    <img id="img-logo" src="img/logo3.png" alt="corp logo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="#">Features</a></li>
+                        <li><a class="nav-link" href="#">How it works</a></li>
+                        <li><a class="nav-link" href="#">Pricing</a></li>
+                    </ul>
+                </nav>
         </header>
 
         <main>
-
             <!-- form section -->
-            <div id="div-form">
-                <h1>Handcrafted, home-made masterpieces</h1>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="Enter your email address" 
-                                required
-                                />
-                    <input 
-                                type="submit" 
-                                value="Get Started" 
-                                id="submit" 
-                                class="btn" 
-                                />
-                </form>
-            </div>
+            <div class="main-container">
+                <section id="form-section">
+                    <div id="form-container">
+                        <h2>Handcrafted, home-made masterpieces</h2>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="Enter your email address" 
+                                        required
+                                        >
+                                        <input 
+                                        type="submit" 
+                                        value="Get Started" 
+                                        id="submit" 
+                                        class="btn" 
+                                        >
+                        </form>
+                    </div>
+                </section>
 
-            <!-- features section -->
-            <section id="features">
-                <div id="div-row">
-                    <i class="fa fa-3x fa-fire"></i>
-                    <div class="desc">
-                        <h1>Premium Materials</h1>
-                        <p>Ma nema boljih materijala od nasih, eeee pa to pa to svijet nije
-                        vidio.
-                        </p>
+                <!-- features section -->
+                <section id="features-section">
+                    <div class="row-div">
+                        <div class="icon-div">
+                            <i class="fa fa-3x fa-fire"></i>
+                        </div>
+                        <div class="desc">
+                            <h1>Premium Materials</h1>
+                            <p>Ma nema boljih materijala od nasih, eeee pa to, pa to svijet nije
+                            vidio.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div id="div-row">
-                    <i class="fa fa-3x fa-truck"></i>
-                    <div class="desc">
-                        <h1>Fast Shipping</h1>
-                        <p>
-                        Ti dok si nazvao, e dok si nazvao ne da je narudzba vec na putu nego je
-                        dostava vec profulala tvoju ulicu.
-                        </p>
+                    <div class="row-div">
+                        <div class="icon-div">
+                            <i class="fa fa-3x fa-truck"></i>
+                        </div>
+                        <div class="desc">
+                            <h1>Fast Shipping</h1>
+                            <p>
+                            Ti dok si nazvao, dok si nazvao ne da je narudzba vec na putu nego je
+                            dostava vec profulala tvoju ulicu.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div id="div-row">
-                    <i class="fa fa-3x fa-battery-full"></i>
-                    <div class="desc">
-                        <h1>Quality Assurance</h1>
-                        <p>Joooooj tu sam te ceko, maaaa nema to bolje od nasih proizvoda,
-                        to kad kupis, kad kupis nase proizvode pa nema to vise tu sta</p>
+                    <div class="row-div">
+                        <div class="icon-div">
+                            <i class="fa fa-3x fa-battery-full"></i>
+                        </div>
+                        <div class="desc">
+                            <h1>Quality Assurance</h1>
+                            <p>Joooooj tu sam te ceko, maaaa nema bolje od nasih proizvoda,
+                            to kad kupis, kad kupis nase proizvode pa nema tu vise sta da se kaze.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- video section -->
-            <section id="section-video-preview">
-                <video id="video-preview">
-                </video>
-            </section>
+                <!-- video section -->
+                <section id="preview-section">
+                    <div id="video-div">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube-nocookie.com/embed/5mm163wWKL8"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        <div>
+                </section>
 
-            <!-- products section -->
-            <section id="section-products">
-
-                <div class="div-row">
-                    <div class="div-product">
-                        <h1>Metla</h1>
-                        <h2>600$</h2>
-                        <ul>
-                            <li>Feature1</li>
-                            <li>Feature2</li>
-                            <li>Feature3</li>
-                        </ul>
-                        <button class="btn">Select</button>
+                <!-- products section -->
+                <section id="products-section">
+                    <div class="row-div">
+                        <div class="product-box-div">
+                            <h1>Metla</h1>
+                            <h2>600$</h2>
+                            <ul>
+                                <li>Od tvrde bukovine</li>
+                                <li>Jagnjeca dlaka</li>
+                                <li>Gore gumena rucka( uzorak divlji vepar )</li>
+                            </ul>
+                            <button class="btn">Select</button>
+                        </div>
+                        <div class="product-box-div">
+                            <h1>Frula</h1>
+                            <h2>300$</h2>
+                            <ul>
+                                <li>Bambus</li>
+                                <li>233 rupe</li>
+                                <li>Tipla gore za usta</li>
+                            </ul>
+                            <button class="btn">Select</button>
+                        </div>
+                        <div class="product-box-div">
+                            <h1>Tacke</h1>
+                            <h2>200$</h2>
+                            <ul>
+                                <li>Kotac</li>
+                                <li>Zeljezo</li>
+                                <li>Gumene rucke</li>
+                            </ul>
+                            <button class="btn">Select</button>
+                        </div>
                     </div>
-                    <div class="div-product">
-                        <h1>Frula</h1>
-                        <h2>300$</h2>
-                        <ul>
-                            <li>Feature1</li>
-                            <li>Feature2</li>
-                            <li>Feature3</li>
-                        </ul>
-                        <button class="btn">Select</button>
-                    </div>
-                    <div class="div-product">
-                        <h1>Zljeb</h1>
-                        <h2>200$</h2>
-                        <ul>
-                            <li>Feature1</li>
-                            <li>Feature2</li>
-                            <li>Feature3</li>
-                        </ul>
-                        <button class="btn">Select</button>
-                    </div>
-                </div>
-            </section>
-
+                </section>
+                        </div>
         </main>
 
         <!-- footer -->
@@ -124,7 +143,7 @@
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <span>Copyright 2020, Migara Segedin</span>
+            <span>Copyright &copy; 2020, Migara Segedin</span>
         </footer>
 
     </body>
